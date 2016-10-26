@@ -2,6 +2,7 @@ body {
   margin-top: 20px;
   background-color: #6AD5CB;
   color: #36413E;
+  font-family: 'Lato', sans-serif;
 }
 
 .well{
@@ -31,7 +32,6 @@ body {
   background-color:#36413E;
   background-image: none;
   background-repeat: no-repeat;
-  border-radius: 0px;
  }
 
  .navbar-inverse .navbar-nav > li > a {
@@ -40,4 +40,5 @@ body {
 
 .navbar-inverse .navbar-brand {
     color: #FFFFFF;
+    font-family: 'Fjalla One', sans-serif;
 }
