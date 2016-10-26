@@ -10,8 +10,8 @@
 
 }, {
   "title": "Chartkick",
-  "imageFeature": "http://i1-scripts.softpedia-static.com/screenshots/Chartkick-py_1.png",
-  "imageContent":"http://geekhmer.github.io/images/chartkick.png" ,
+  "imageFeature": "http://geekhmer.github.io/images/chartkick.png",
+  "imageContent":"http://i1-scripts.softpedia-static.com/screenshots/Chartkick-py_1.png" ,
   "teaser": "Create beautiful Javascript charts with one line of Ruby",
   "content": "Chartkick is a charting library for Ruby on Rails that allows you to easily create nice looking charts. Chartkick is compatible with all major browsers and can easily be used to give your Ruby on Rails application some additional flair",
   "timestamp": "2016-9-15" ,
