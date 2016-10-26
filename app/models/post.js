@@ -6,6 +6,6 @@ export default DS.Model.extend({
   imageContent: DS.attr(),
   teaser: DS.attr(),
   content: DS.attr(),
-  timestamp: DS.attr('string'),
+  timestamp: DS.attr('date'),
   author: DS.attr()
 });
