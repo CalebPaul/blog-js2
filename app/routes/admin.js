@@ -4,6 +4,7 @@ export default Ember.Route.extend({
   model() {
     return this.store.findAll('post');
   },
+
   actions: {
     saveNewPost(params) {
       var newPost = this.store.createRecord('post', params);
@@ -11,4 +12,9 @@ export default Ember.Route.extend({
       this.transitionTo('admin');
     },
 
+    destroyPost(post) {
+    post.destroyRecord();
+    this.transitionTo('admin');
+    }
+  }
 });
