@@ -1,0 +1,58 @@
+
+<div class="well">
+
+  <h2 class="text-center">New Post</h2>
+
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="title" class="col-sm-2 control-label">Title:</label>
+      <div class="col-sm-10">
+        {{input class="form-control" value=title id="title"}}
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="imageFeature" class="col-sm-2 control-label">Feature Image:</label>
+      <div class="col-sm-10">
+        {{input class="form-control" value=imageFeature id="imageFeature" placeholder="Image URL"}}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="imageContent" class="col-sm-2 control-label">Body Image:</label>
+      <div class="col-sm-10">
+      {{input class="form-control" value=imageContent id="imageContent" placeholder="Image URL"}}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="teaser" class="col-sm-2 control-label">Teaser Text:</label>
+      <div class="col-sm-10">
+        <textarea rows=3 class="form-control">{{input value=teaser id="teaser"}}</textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="content" class="col-sm-2 control-label">Content Text:</label>
+      <div class="col-sm-10">
+        <textarea rows=10 class="form-control">{{input  value=content id="content"}}</textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="timestamp" class="col-sm-2 control-label">Date:</label>
+      <div class="col-sm-10">
+        {{input class="form-control" value=timestamp type="date" id="timestamp"}}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="author" class="col-sm-2 control-label">Author:</label>
+      <div class="col-sm-10">
+        {{input class="form-control" value=author id="author"}}
+      </div>
+    </div>
+
+    <button class="btn btn-success center-block" {{action 'saveNewPost'}}>Publish</button>
+  </form>
+</div>
