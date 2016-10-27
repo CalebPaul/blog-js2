@@ -1,12 +1,19 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  formStatus: Ember.inject.service(),
+
   updatePostForm: false,
   actions: {
-    updatePostForm(post) {
-      console.log("updatePostFormTest");
-      this.set('updatePostForm', true);
+    addToStatus(value) {
+      this.get('formStatus').add(value);
     },
+
+    // updatePostForm(post) {
+    //   console.log("updatePostFormTest");
+    //   this.set('updatePostForm', true);
+    //   this.get('formStatus').add(updatePostForm);
+    // },
 
     updatePost(post) {
       var params = {

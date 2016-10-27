@@ -1,7 +1,10 @@
 <div class="row">
   <div class="col-md-6">
     {{new-post post=post saveNewPost="saveNewPost"}}
-
+    {{#if updatePost}}
+    {{update-post post=post updatePostForm="updatePostForm" updatePost="updatePost"}}
+    {{/if}}
+    {{log 'admin.hbs status value: ' formStatus}}
   </div>
   <div class="col-md-6">
     {{#each model as |post|}}

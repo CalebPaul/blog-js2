@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  formStatus: Ember.inject.service(),
   model() {
     return this.store.findAll('post');
   },
