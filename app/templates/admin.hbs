@@ -1,12 +1,11 @@
 <div class="row">
   <div class="col-md-6">
     {{new-post post=post saveNewPost="saveNewPost"}}
-    {{update-post post=post updatePost="updatePost"}}
+
   </div>
   <div class="col-md-6">
     {{#each model as |post|}}
-      {{admin-tile post=post destroyPost="destroyPost"}}
+      {{admin-tile post=post destroyPost="destroyPost" updatePost="updatePost"}}
     {{/each}}
-
   </div>
 </div>
